@@ -8,9 +8,14 @@ const  App=()=> {
   
   return (
 
-<div className={`${display ? 'bg-black bg-opacity-50 fixed w-full h-screen z-10':''}`}>
+<div>
 <Todos display={display} setDisplay={setDisplay}/>
 
+<div
+onClick={()=>setDisplay(false)}
+className={`${display ? 'bg-black bg-opacity-50 fixed w-full h-screen z-2 top-0':''}`}>
+
+</div>
 </div>
     )
 }
